@@ -1,0 +1,162 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* 
+Color Scheme
+    Primary (Background): #0F172A
+    Secondary (Surface cards): #1E293B
+    Accent: #3B82F6 (electric blue)
+    Highlight Accent: #22D3EE (cyan pop)
+    Text Primary: #F8FAFC
+    Text Secondary: #94A3B8
+*/
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+    --lightFont: 300;
+    --heavyFont: 700;
+}
+
+nav {
+    position: sticky;
+    /* top: 20px; */
+    top: 0.2px;
+    background-color: red;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav a {
+    padding: 0.8rem 0.5rem;
+    display: block;
+    text-decoration: none;
+    color: powderblue;
+    font-weight: var(--heavyFont);
+}
+
+nav a:hover {
+    background-color: black;
+    color: wheat;
+    border-radius: 10px;
+}
+
+/* About */
+section#about {
+    background-color: bisque;
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#about h1 {
+    font-size: 2.5rem;
+}
+
+section#about h2 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Projects */
+section#projects {
+    background-color: rosybrown;
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects a {
+    flex-basis: 100%;
+    padding: 1rem 2vw;
+    text-align: center;
+    text-decoration: none;
+    color: aqua;
+}
+
+.projects a:hover {
+    background-color: black;
+    color: wheat;
+}
+
+section#projects figure {
+    margin: 0;
+    width: 100%;
+}
+
+section#projects img {
+    width: 100%;
+}
+
+section#contact {
+    background-color: powderblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#contact h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+section#contact ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+section#contact li {
+    list-style-type: none;
+
+}
+
+section#contact a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+section#contact a img {
+    height: 50px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+section#contact a:hover {
+    text-decoration: underline;
+    transform: translateY(5px);
+}
+
+footer p, footer span {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    padding: 1rem 0;
+}
