@@ -12,6 +12,7 @@ Color Scheme
     Highlight Accent: #22D3EE (cyan pop)
     Text Primary: #F8FAFC
     Text Secondary: #94A3B8
+    #8B5CF6
 */
 
 :root {
@@ -28,7 +29,7 @@ nav {
     position: sticky;
     /* top: 20px; */
     top: 0.2px;
-    background-color: red;
+    background-color: #0F172A;
 }
 
 nav ul {
@@ -42,19 +43,19 @@ nav a {
     padding: 0.8rem 0.5rem;
     display: block;
     text-decoration: none;
-    color: powderblue;
+    color: #22D3EE;
     font-weight: var(--heavyFont);
 }
 
 nav a:hover {
-    background-color: black;
-    color: wheat;
+    background-color: #22D3EE;
+    color: #0F172A;
     border-radius: 10px;
 }
 
 /* About */
 section#about {
-    background-color: bisque;
+    background-color: #1E293B;
     height: 100vh;
     padding: 50px;
     text-align: center;
@@ -65,22 +66,24 @@ section#about {
 
 section#about h1 {
     font-size: 2.5rem;
+    color: #22D3EE;
 }
 
 section#about h2 {
     font-size: 1.5rem;
-    color: black;
+    color: #22D3EE;
 }
 
 /* Projects */
 section#projects {
-    background-color: rosybrown;
+    background-color: #3B82F6;
     min-height: 100vh;
     padding: 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #1E293B;
 }
 
 .projects {
@@ -93,12 +96,13 @@ section#projects {
     padding: 1rem 2vw;
     text-align: center;
     text-decoration: none;
-    color: aqua;
+    color: #1E293B;
+    border-radius: 15px;
 }
 
 .projects a:hover {
-    background-color: black;
-    color: wheat;
+    background-color: #1E293B;
+    color: #22D3EE;
 }
 
 section#projects figure {
@@ -110,18 +114,22 @@ section#projects img {
     width: 100%;
 }
 
+/* contact */
 section#contact {
-    background-color: powderblue;
+    background-color: #8B5CF6;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: fit-content;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 section#contact h2 {
     display: flex;
     justify-content: center;
-    color: white;
+    color: #0F172A;
 }
 
 section#contact ul {
@@ -136,7 +144,7 @@ section#contact li {
 }
 
 section#contact a {
-    color: white;
+    color: #0F172A;
     text-decoration: none;
     display: block;
     transition: transform 0.3s ease-in-out;
@@ -154,9 +162,15 @@ section#contact a:hover {
     transform: translateY(5px);
 }
 
+footer {
+    background-color: #8B5CF6;
+}
+
 footer p, footer span {
     font-size: 2rem;
     text-align: center;
-    color: black;
+    color: 0F172A;
     padding: 1rem 0;
+    margin-top: 0;
+    
 }
